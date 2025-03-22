@@ -101,7 +101,7 @@
           </div>
 
           {/* Right Section */}
-          <div className="md:w-3/5 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="md:w-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-col-3  gap-6">
             {services.map((service, index) => (
               <div key={index} className="bg-[#112949] text-white sm:p-6 py-5 px-6 rounded-lg shadow-lg">
                 <div className="flex items-center gap-4 mb-4">
