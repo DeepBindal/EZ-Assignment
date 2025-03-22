@@ -62,7 +62,7 @@
     };
 
     return (
-      <div className="min-h-screen bg-gray-100 exo-font flex flex-col sm:flex-row items-center justify-center p-6">
+      <div className="min-h-screen bg-gray-100 exo-font flex flex-col md:flex-row items-center justify-center p-6">
           {/* Left Section */}
           <div className="md:w-2/5 flex flex-col justify-between mb-6 md:mb-0 md:mr-8">
             <div className="flex flex-col items-center md:items-start">
@@ -74,7 +74,7 @@
             </div>
 
             {/* Email Form */}
-            <form onSubmit={formSubmit} className="mt-6 hidden sm:block">
+            <form onSubmit={formSubmit} className="mt-6 hidden md:block">
               <div className="flex flex-col md:flex-row gap-4">
                 <input
                   type="email"
@@ -94,14 +94,14 @@
 
             {/* Feedback Message */}
             {message && (
-              <p className={`mt-4 hidden sm:block text-sm ${message.error ? "text-red-500" : "text-green-500"}`}>
+              <p className={`mt-4 hidden md:block text-sm ${message.error ? "text-red-500" : "text-green-500"}`}>
                 {message.message}
               </p>
             )}
           </div>
 
           {/* Right Section */}
-          <div className="md:w-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-col-3  gap-6">
+          <div className="md:w-[70%] grid grid-cols-1 md:grid-cols-3 gap-4">
             {services.map((service, index) => (
               <div key={index} className="bg-[#112949] text-white sm:p-6 py-5 px-6 rounded-lg shadow-lg">
                 <div className="flex items-center gap-4 mb-4">
@@ -113,7 +113,7 @@
             ))}
           </div>
 
-          <form onSubmit={formSubmit} className="mt-6 sm:hidden block w-full">
+          <form onSubmit={formSubmit} className="mt-6 md:hidden block w-full">
               <div className="flex flex-col md:flex-row gap-4">
                 <input
                   type="email"
@@ -132,7 +132,7 @@
             </form>
 
             {message && (
-              <p className={`mt-4 sm:hidden block text-sm ${message.error ? "text-red-500" : "text-green-500"}`}>
+              <p className={`mt-4 md:hidden block text-sm ${message.error ? "text-red-500" : "text-green-500"}`}>
                 {message.message}
               </p>
             )}
